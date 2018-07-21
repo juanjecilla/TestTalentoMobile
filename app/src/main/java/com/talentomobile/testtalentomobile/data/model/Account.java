@@ -22,6 +22,11 @@ public class Account extends RealmObject {
     public Account() {
     }
 
+    public Account(long accountId, boolean isVisible){
+        this.accountId = accountId;
+        this.isVisible = isVisible;
+    }
+
     public int getAccountBalanceInCents() {
         return accountBalanceInCents;
     }
